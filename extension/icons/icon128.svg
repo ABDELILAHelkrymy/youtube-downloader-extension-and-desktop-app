@@ -1,0 +1,6 @@
+<!-- SVG icon placeholder - user can replace with actual icons later -->
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#f38ba8" rx="24"/>
+  <path d="M64 32L64 76M64 76L44 56M64 76L84 56" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 96L92 96" stroke="white" stroke-width="8" stroke-linecap="round"/>
+</svg>

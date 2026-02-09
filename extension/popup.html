@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Downloader</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 350px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2e;
+      color: #cdd6f4;
+      padding: 16px;
+    }
+    
+    h1 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #f38ba8;
+    }
+    
+    .status {
+      padding: 12px;
+      background: #2a2a3d;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      border-left: 3px solid #89b4fa;
+    }
+    
+    .video-info {
+      background: #2a2a3d;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+    
+    .video-info .title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #cdd6f4;
+    }
+    
+    .video-info .detail {
+      color: #7f849c;
+      margin-bottom: 4px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #f38ba8;
+      color: #1e1e2e;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    button:hover {
+      background: #f5a0b8;
+    }
+    
+    button:disabled {
+      background: #45475a;
+      color: #7f849c;
+      cursor: not-allowed;
+    }
+    
+    .error {
+      padding: 10px;
+      background: #f38ba8;
+      color: #1e1e2e;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+    
+    .success {
+      padding: 10px;
+      background: #a6e3a1;
+      color: #1e1e2e;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+    
+    .format-select {
+      width: 100%;
+      padding: 10px;
+      background: #363650;
+      color: #cdd6f4;
+      border: 1px solid #45475a;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📥 YouTube Downloader</h1>
+  
+  <div id="status" class="status">
+    Checking desktop app...
+  </div>
+  
+  <div id="videoInfo" class="video-info" style="display: none;">
+    <div class="title" id="videoTitle"></div>
+    <div class="detail" id="videoChannel"></div>
+    <div class="detail" id="videoDuration"></div>
+  </div>
+  
+  <select id="formatSelect" class="format-select">
+    <option value="best">Best Quality (MP4)</option>
+    <option value="1080p">1080p MP4</option>
+    <option value="720p" selected>720p MP4</option>
+    <option value="480p">480p MP4</option>
+    <option value="audio">Audio Only (MP3)</option>
+  </select>
+  
+  <button id="downloadBtn" disabled>Download Video</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
