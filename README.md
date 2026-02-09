@@ -20,7 +20,7 @@ The app will:
 1. Open Chrome and go to `chrome://extensions/`
 2. Enable **Developer mode** (toggle in top right)
 3. Click **Load unpacked**
-4. Select folder: `c:\Users\elkrymy\scripts\extension`
+4. Select folder: `extension`
 5. Extension icon will appear in your toolbar
 
 ### 3. Download Videos
@@ -67,7 +67,7 @@ YouTube Page → Extension captures URL → HTTP POST localhost:9876 → Desktop
 ## 📁 File Structure
 
 ```
-scripts/
+youtube-donwloader/
 ├── extension/
 │   ├── manifest.json       # Extension config
 │   ├── background.js       # Intercepts requests
